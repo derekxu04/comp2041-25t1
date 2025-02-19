@@ -1,0 +1,11 @@
+Answers to some of the tutorial questions:
+
+6:
+a) grep -E '^#'
+b) grep -Ev '^#' OR grep -E '^[^#]'
+c) grep -E '\s$'
+d) grep -E 'Barry|Harry|Larry|Parry' OR grep -E '[BHLP]arry'
+e) grep -E 'hello.*world'
+f) grep -E 'c[ae]l[ae]nd[ae]r'
+g) grep -E '[0-9]+(,[0-9]+)*'
+h) grep -E '"[^"]*\\n'
