@@ -1,0 +1,11 @@
+2.
+a) head -3 /etc/passwd
+b) grep -E '^(cs|se|bi|en)[0-9]{4}:' /etc/passwd
+c) grep -E ':/bin/bash$' /etc/passwd | cut -d':' -f1
+d) cut -d':' -f1,2 /etc/passwd | tr ':' '\t' > passwords.txt
+
+6.
+a) sort benchmarks -k3,3 -k2,2
+b) sort benchmarks -k4,4 -k1.8,1n
+c) sed -Ee 's/\t0/\t/g' benchmarks
+d) sed -Ee '/^program2\b/,/^program13\b/d' benchmarks
